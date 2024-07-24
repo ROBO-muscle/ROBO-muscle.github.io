@@ -1,0 +1,101 @@
+.About_us {
+	display: block;
+}
+
+.member {
+	display: block;
+}
+
+.member .line {
+	border: solid 2px;
+	position: relative;
+	top: 108px;
+	margin-left: 50px;
+}
+
+.member img {
+	border-radius: 50%;
+	width: 100px;
+	height: 100px;
+	border: solid 4px;
+}
+
+.member .name {
+	display: inline-block;
+	position: relative;
+	bottom: 16px;
+	font-size: 64px;
+}
+
+.member .about {
+	position: flex;
+	margin-left: 100px;
+}
+
+.member .kosenNs {
+	display: inline-block;
+	margin: 0 0 0 auto;
+}
+
+.member .twitter {
+	display: inline-block;
+}
+
+.twitter {
+	z-index: 97;
+	position: absolute;
+	right: 0px;
+	top: 128px;
+	/* min-width: 200px; */
+	width: calc((100% - 1000px) / 2);
+	height: calc(100% - 256px);
+	overflow: scroll;
+	background-color: white;
+	border: solid 3px black;
+	border-right: none;
+	border-radius: 10px;
+}
+
+.twitter .title {
+	font-size: 30px;
+	text-align: center;
+	color: black;
+	font-weight: bold;
+}
+
+.twitter a {
+	color: white;
+}
+
+@media (prefers-color-scheme: dark) {
+	.About_us {
+		color: white;
+	}
+	.member {
+		color: white;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	.member img {
+		width: 50px;
+		height: 50px;
+	}
+	.member .line {
+		top: 58px;
+		margin-left: 25px;
+	}
+	.member .name {
+		font-size: 40px;
+		bottom: 12px;
+	}
+	.member .about {
+		margin-left: 50px;
+	}
+}
+
+@media screen and (max-width: 1600px) {
+	.twitter {
+		display: none;
+	}
+}
