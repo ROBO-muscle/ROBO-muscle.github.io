@@ -114,11 +114,35 @@
 
 @media screen and (max-width: 575px) {
 	.member .name {
+		font-size: 34px;
+	}
+}
+
+@media screen and (max-width: 410px) {
+	.member .name {
 		font-size: 32px;
 	}
 }
 
 @media screen and (max-width: 390px) {
+	.member .name {
+		font-size: 30px;
+	}
+}
+
+@media screen and (max-width: 370px) {
+	.member .name {
+		font-size: 28px;
+	}
+}
+
+@media screen and (max-width: 355px) {
+	.member .name {
+		font-size: 25px;
+	}
+}
+
+@media screen and (max-width: 319px) {
 	.member .name {
 		font-size: 24px;
 	}
