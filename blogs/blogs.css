@@ -1,0 +1,139 @@
+.blogs {
+	max-width: none;
+	margin: 0px;
+	width: 100%;
+}
+
+.blogs .title {
+	position: relative;
+	left: 10px;
+	margin-right: 10px;
+}
+
+.blogs a {
+	text-decoration: none;
+}
+
+.article {
+	display: inline-block;
+	border: 1px solid;
+	color: black;
+	box-sizing: border-box;
+	border-radius: 10px;
+	margin-bottom: 20px;
+}
+
+.article img {
+	width: 100%;
+	height: auto;
+	background-color: #1da1f2;
+	border-radius: 10px;
+	margin: 0;
+}
+
+.article .title {
+	font-size: 20px;
+	text-align: center;
+	left: 0;
+	margin: 0;
+	min-height: 60px;
+}
+
+.blogs .author {
+	width: auto;
+	margin-top: 2px;
+	position: relative;
+	left: 10px;
+	margin-right: 10px;
+}
+
+.blogs .author img {
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	display: inline;
+	border: none;
+	margin: 0;
+}
+
+@media (prefers-color-scheme: dark) {
+	.article {
+		background-color: #0f2350;
+		border: none;
+	}
+
+	.article:hover {
+		outline-width: 1px;
+		outline-offset: 0;
+		outline-color: rgba(0, 130, 206, 0.75);
+		outline-style: solid;
+		animation: animateOutline 2s ease infinite;
+	}
+
+	@keyframes animateOutline {
+		0% {
+			outline-width: 1px;
+			outline-offset: 0;
+			outline-color: rgba(0, 130, 206, 0);
+		}
+
+		20% {
+			outline-color: rgba(0, 130, 206, 0.75);
+		}
+
+		75% {
+			outline-width: 14px;
+			outline-offset: 8px;
+			outline-color: rgba(0, 130, 206, 0);
+		}
+
+		100% {
+			outline-width: 14px;
+			outline-offset: 8px;
+			outline-color: rgba(102, 102, 102, 0);
+		}
+	}
+}
+
+@media screen and (min-width: 1400px) {
+	.article {
+		width: 15.7%;
+
+		margin-right: 2%;
+		margin-left: 2%;
+	}
+}
+
+@media screen and (max-width: 1400px) {
+	.article {
+		width: 20.6%;
+
+		margin-right: 2%;
+		margin-left: 2%;
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	.article {
+		width: 30.8%;
+		margin-right: 1%;
+		margin-left: 1%;
+	}
+}
+
+@media screen and (max-width: 750px) {
+	.article {
+		width: 47%;
+		margin-right: 1%;
+		margin-left: 1%;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.article {
+		display: block;
+		width: 90%;
+		margin: auto;
+		margin-bottom: 10px;
+	}
+}
