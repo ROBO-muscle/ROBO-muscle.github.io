@@ -39,32 +39,20 @@
 		<link rel="stylesheet" href="about.css" />
 		<link rel="stylesheet" href="header/header.css" />
 		<link rel="stylesheet" href="footer/footer.css" />
+		<script>
+			fetch("header/header.html")
+				.then((response) => response.text())
+				.then((data) =>
+					document.querySelector("body").insertAdjacentHTML("afterbegin", data)
+				);
+			fetch("footer/footer.html")
+				.then((response) => response.text())
+				.then((data) =>
+					document.querySelector("main").insertAdjacentHTML("afterend", data)
+				);
+		</script>
 	</head>
 	<body>
-		<!-- <div class="twitter">
-			<div class="title">チーム垢随時更新中!</div>
-			<a
-				class="twitter-timeline"
-				href="https://x.com/ROBO_muscle?ref_src=twsrc%5Etfw"
-				>Tweets by ROBO_muscle
-			</a>
-
-			<script
-				async
-				src="https://platform.twitter.com/widgets.js"
-				charset="utf-8"
-			></script>
-			<a
-				class="twitter-timeline"
-				href="https://twitter.com/ROBO_muscle?ref_src=twsrc%5Etfw"
-				>Tweets by ROBO_muscle</a
-			>
-			<script
-				async
-				src="https://platform.twitter.com/widgets.js"
-				charset="utf-8"
-			></script>
-		</div> -->
 		<main>
 			<div class="About_us">
 				<div class="title">About Us</div>
@@ -128,18 +116,5 @@
 				</div>
 			</div>
 		</main>
-
-		<script>
-			fetch("header/header.html")
-				.then((response) => response.text())
-				.then((data) =>
-					document.querySelector("body").insertAdjacentHTML("afterbegin", data)
-				);
-			fetch("footer/footer.html")
-				.then((response) => response.text())
-				.then((data) =>
-					document.querySelector("main").insertAdjacentHTML("afterend", data)
-				);
-		</script>
 	</body>
 </html>
