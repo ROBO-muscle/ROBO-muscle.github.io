@@ -16,32 +16,34 @@
 			gtag("config", "G-CDCJ7SSLKH");
 		</script>
 
-		<base href="https://robo-muscle.github.io/" />
 		<meta charset="utf-8" />
-		<meta http-equiv="Pragma" content="no-cache" />
-		<meta http-equiv="Cache-Control" content="no-cache" />
+		<base href="https://robo-muscle.github.io/" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta property="og:url" content="https://robo-muscle.github.io/" />
+		<meta property="og:website" content="website" />
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta property="og:site_name" content="ROBO_muscle" />
+		<meta property="og:title" content="Blogs" />
+		<meta name="twitter:title" content="Blogs" />
+		<meta
+			property="og:description"
+			content="ロボマッスルチームの公式ブログ一覧です。最近の活動情報をメンバーが投稿しています。"
+		/>
+
+		<meta
+			property="og:image"
+			content="https://robo-muscle.github.io/photo_hub/TMCIT-gate.jpg"
+		/>
+		<meta name=“twitter:image”
+		content=“https://robo-muscle.github.io/photo_hub/TMCIT-gate.jpg“ />
+		<meta property="og:locale" content="ja_JP" />
+		<meta name="twitter:site" content="@ROBO_muscle" />
+		<meta charset="utf-8" />
 		<title>ROBO_muscle - Blogs</title>
 		<link rel="stylesheet" href="style.css" />
-		<link rel="stylesheet" href="blogs/blogs.css" />
+		<link rel="stylesheet" href="blogs.css" />
 		<link rel="stylesheet" href="header/header.css" />
 		<link rel="stylesheet" href="footer/footer.css" />
-	</head>
-	<body>
-		<main class="blogs">
-			<div class="title">Blogs</div>
-			<!-- <a href="blogs/template/index.html">
-				<div class="article a b c d">
-					<img src="blogs/template/samune.jpg" />
-					<div class="title">abcd</div>
-					<div class="author">
-						<img src="icons/taku_256.jpg" />
-						<div class="name">taku_256</div>
-						<div class="date">2024/6/6</div>
-					</div>
-				</div>
-			</a> -->
-		</main>
 		<script>
 			fetch("header/header.html")
 				.then((response) => response.text())
@@ -53,6 +55,13 @@
 				.then((data) =>
 					document.querySelector("main").insertAdjacentHTML("afterend", data)
 				);
+		</script>
+	</head>
+	<body>
+		<main class="blogs">
+			<div class="title">Blogs</div>
+		</main>
+		<script>
 			function showCards() {
 				let hash = window.location.hash.substring(1);
 				let allCards = document.querySelectorAll(".article");
