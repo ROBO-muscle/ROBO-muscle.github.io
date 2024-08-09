@@ -9,7 +9,6 @@ body {
 main {
 	width: 90%;
 	padding: 64px 0 4px 0;
-	background-color: white;
 	max-width: 1000px;
 	margin: auto;
 	min-height: calc(100lvh - 100px);
@@ -77,7 +76,7 @@ a {
 }
 
 @media (prefers-color-scheme: dark) {
-	div {
+	main {
 		color: white;
 	}
 
@@ -85,26 +84,15 @@ a {
 		background-color: #444;
 	}
 
-	main {
-		background-color: #444;
-	}
-
 	a {
 		color: aquamarine;
 	}
 
-	.title {
-		color: white;
-	}
 	.titlebar {
 		color: aquamarine;
 	}
 
 	.author .name {
-		color: aliceblue;
-	}
-
-	.author .date {
 		color: aliceblue;
 	}
 }

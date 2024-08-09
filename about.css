@@ -41,32 +41,6 @@
 	display: inline-block;
 }
 
-.twitter {
-	z-index: 97;
-	position: absolute;
-	right: 0px;
-	top: 128px;
-	/* min-width: 200px; */
-	width: calc((100% - 1000px) / 2);
-	height: calc(100% - 256px);
-	overflow: scroll;
-	background-color: white;
-	border: solid 3px black;
-	border-right: none;
-	border-radius: 10px;
-}
-
-.twitter .title {
-	font-size: 30px;
-	text-align: center;
-	color: black;
-	font-weight: bold;
-}
-
-.twitter a {
-	color: white;
-}
-
 @media (prefers-color-scheme: dark) {
 	.About_us {
 		color: white;
