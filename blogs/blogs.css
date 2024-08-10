@@ -60,8 +60,8 @@
 	.article {
 		background-color: #0f2350;
 		border: none;
+		color: whitesmoke;
 	}
-
 	.article:hover {
 		outline-width: 1px;
 		outline-offset: 0;
