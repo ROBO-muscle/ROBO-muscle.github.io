@@ -51,6 +51,12 @@
 	}
 }
 
+@media screen and (max-width: 760px) {
+	.member .name {
+		font-size: 56px;
+	}
+}
+
 @media screen and (max-width: 700px) {
 	.member img {
 		width: 50px;
@@ -69,12 +75,6 @@
 
 	.member .about {
 		margin-left: 50px;
-	}
-}
-
-@media screen and (max-width: 760px) {
-	.member .name {
-		font-size: 56px;
 	}
 }
 
