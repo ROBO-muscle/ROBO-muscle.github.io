@@ -101,3 +101,198 @@ a {
 		color: aliceblue;
 	}
 }
+
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 98;
+	width: 100%;
+}
+
+.background {
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 64px;
+	position: fixed;
+	color: #000000;
+	backdrop-filter: blur(3px);
+	background-color: #ffffff80;
+	z-index: 98;
+	text-align: right;
+}
+
+.logo {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	font-size: 32px;
+	color: #000000;
+	z-index: 99;
+}
+
+.menu {
+	z-index: 99;
+	position: absolute;
+	top: 10px;
+	width: 128px;
+	text-align: center;
+	cursor: pointer;
+	font-size: 32px;
+	color: #000000;
+	text-decoration: none;
+}
+
+.menu:hover {
+	color: #0481a2;
+	border-bottom: solid 3px;
+}
+
+.home {
+	right: 316px;
+}
+
+.blog {
+	right: 168px;
+}
+
+.contact {
+	right: 20px;
+}
+
+input[type="checkbox"] {
+	display: none;
+}
+
+@media (prefers-color-scheme: dark) {
+	.background {
+		background: linear-gradient(-20deg, #d558c880 0%, #24d29280 100%);
+	}
+
+	.menu:hover {
+		color: #39ff14;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	input[type="checkbox"] {
+		position: fixed;
+		cursor: pointer;
+		top: -3px;
+		right: -3px;
+		display: inline-block;
+		width: 64px;
+		height: 64px;
+		z-index: 100;
+		opacity: 0;
+	}
+
+	.menu {
+		visibility: collapse;
+	}
+
+	.bar {
+		position: fixed;
+		background-color: black;
+		right: 10px;
+		width: 45px;
+		height: 3px;
+		z-index: 99;
+	}
+
+	.bar_1 {
+		top: 15px;
+	}
+
+	.bar_2 {
+		top: 30px;
+	}
+
+	.bar_3 {
+		top: 45px;
+	}
+
+	#hamburger:checked ~ .bar_1 {
+		transform: translate(2px, 1px) rotate(45deg);
+		transform-origin: 0%;
+	}
+
+	#hamburger:checked ~ .bar_2 {
+		opacity: 0;
+	}
+
+	#hamburger:checked ~ .bar_3 {
+		transform: translate(2px, 3px) rotate(-45deg);
+		transform-origin: 0%;
+	}
+
+	#hamburger:checked ~ .menu {
+		visibility: visible;
+		display: block;
+		right: 0;
+		width: 100%;
+		height: 50px;
+		text-align: center;
+		border-top: solid 1px;
+	}
+
+	#hamburger:checked ~ .home {
+		top: 64px;
+	}
+
+	#hamburger:checked ~ .blog {
+		top: 114px;
+	}
+
+	#hamburger:checked ~ .contact {
+		top: 164px;
+	}
+
+	#hamburger:checked ~ .background {
+		background: white;
+		position: absolute;
+		width: 100%;
+		height: 214px;
+		z-index: 95;
+	}
+
+	#hamburger:checked ~ .popup-bg-cover {
+		position: fixed;
+		background: rgba(0, 0, 0, 0.5);
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		z-index: 90;
+	}
+
+	@media (prefers-color-scheme: dark) {
+		#hamburger:checked ~ .background {
+			background: linear-gradient(-20deg, #d558c880 0%, #24d29280 100%);
+		}
+	}
+}
+
+footer {
+	position: revert;
+	padding: 0;
+	bottom: 0;
+	width: 100%;
+	height: 32px;
+	vertical-align: middle;
+	text-align: center;
+	background-color: #444;
+	z-index: 98;
+}
+
+.copywrite {
+	font-weight: bold;
+	color: #d4adf4;
+}
+
+@media (prefers-color-scheme: dark) {
+	footer {
+		background-color: black;
+	}
+}
