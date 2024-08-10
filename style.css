@@ -14,6 +14,11 @@ main {
 	min-height: calc(100lvh - 100px);
 }
 
+img {
+	width: 100%;
+	height: auto;
+}
+
 .blog_head img {
 	width: 100%;
 	border-radius: 10px;
