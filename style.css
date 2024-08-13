@@ -37,19 +37,23 @@ a {
 	border: solid 2px;
 }
 
-.authorgn {
-	height: 64px;
-	width: 270px;
-	margin: 10px 0 0 auto;
-}
-
 .author {
 	height: 64px;
 	width: 190px;
 	margin: 10px 0 0 auto;
 }
 
+.authorgn {
+	height: 64px;
+	width: 270px;
+	margin: 10px 0 0 auto;
+}
+
 .author a {
+	color: #00000000;
+}
+
+.authorgn a {
 	color: #00000000;
 }
 
@@ -62,7 +66,20 @@ a {
 	border: none;
 }
 
+.authorgn img {
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	display: inline;
+	margin: 0px;
+	border: none;
+}
+
 .author a {
+	border-bottom: none;
+}
+
+.authorgn a {
 	border-bottom: none;
 }
 
@@ -73,7 +90,21 @@ a {
 	color: black;
 }
 
+.authorgn .name {
+	position: relative;
+	display: inline;
+	bottom: 28px;
+	color: black;
+}
+
 .author .date {
+	position: relative;
+	bottom: 30px;
+	left: 55px;
+	margin-right: 75px;
+}
+
+.authorgn .date {
 	position: relative;
 	bottom: 30px;
 	left: 55px;
@@ -98,6 +129,10 @@ a {
 	}
 
 	.author .name {
+		color: aliceblue;
+	}
+
+	.authorgn .name {
 		color: aliceblue;
 	}
 }
