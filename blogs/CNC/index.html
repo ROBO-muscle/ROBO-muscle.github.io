@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<!-- Google tag (gtag.js) -->
+		<!-- <script
+			async
+			src="https://www.googletagmanager.com/gtag/js?id=G-CDCJ7SSLKH"
+		></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag("js", new Date());
+
+			gtag("config", "G-CDCJ7SSLKH");
+		</script> -->
+		<base href="https://robo-muscle.github.io" />
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<title>JLCPCBでCNC部品を発注をしてみよう！ - ROBO_muscle</title>
+		<meta
+			property="og:url"
+			content="https://robo-muscle.github.io/blogs/CNC/"
+		/>
+		<meta property="og:website" content="article" />
+		<meta
+			property="article:published_time"
+			content="2024-08-10T17:00:00+09:00"
+		/>
+		<meta
+			property="article:modified_time"
+			content="2024-08-10T17:00:00+09:00"
+		/>
+		<meta property="article:author" content="taku_256" />
+		<meta property="article:tag" content="RCJJ" />
+		<meta property="article:tag" content="Robocup" />
+		<meta property="article:tag" content="technology" />
+		<meta property="article:tag" content="robot" />
+		<meta property="article:section" content="RCJJ" />
+		<meta property="article:section" content="Robocup" />
+		<meta property="article:section" content="technology" />
+		<meta property="article:section" content="robot" />
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta property="og:site_name" content="ROBO_muscle" />
+		<meta property="og:title" content="JLCPCBでCNC部品を発注をしてみよう！" />
+		<meta name="twitter:title" content="JLCPCBでCNC部品を発注をしてみよう！" />
+		<meta
+			property="og:description"
+			content="この記事ではJLCPCBでCNC部品を発注する方法について解説していきます！"
+		/>
+		<meta
+			name="description"
+			content="この記事ではJLCPCBでCNC部品を発注する方法について解説していきます！"
+		/>
+		<meta
+			property="og:image"
+			content="https://robo-muscle.github.io/blogs/CNC/samune.jpg"
+		/>
+		<meta name=“twitter:image”
+		content=“https://robo-muscle.github.io/blogs/CNC/samune.jpg“ />
+		<meta property="og:locale" content="ja_JP" />
+		<meta name="twitter:site" content="@ROBO_muscle" />
+		<link rel="stylesheet" href="style.css" />
+		<script>
+			fetch("header/header.html")
+				.then((response) => response.text())
+				.then((data) =>
+					document.querySelector("body").insertAdjacentHTML("afterbegin", data)
+				);
+			fetch("footer/footer.html")
+				.then((response) => response.text())
+				.then((data) =>
+					document.querySelector("main").insertAdjacentHTML("afterend", data)
+				);
+		</script>
+	</head>
+	<body>
+		<main>
+			<div class="blog_head">
+				<div class="title">JLCPCBでCNC部品を発注をしてみよう！</div>
+				<div class="titlebar"></div>
+				<div class="authorgn">
+					<!--ただしがのたはauthorgn-->
+					<a href="https://twitter.com/baikasuzuki0120">
+						<img src="icons/maeboo.webp" alt="members_icon" />
+					</a>
+					<a href="https://twitter.com/baikasuzuki0120">
+						<div class="name">Author ただのガノタ高専生</div>
+					</a>
+					<div class="date">2024/08/14</div>
+				</div>
+				<img src="blogs/CNC/samune.webp" alt="thumbnail" />
+			</div>
+			<p>こんにちは！ロボマッスルです🦾</p>
+			<p>
+				今回は JLCPCB
+				さんでCNC部品を発注する方法について解説していきたいと思います。
+			</p>
+			<h2>データの用意</h2>
+			<p>
+				まず発注するパーツのデータを用意します。 今回は Fusion360
+				を使用した方法について説明します。
+			</p>
+			<p>発注するパーツのデータを開きエクスポートを選択します。</p>
+			<img src="blogs/CNC/1.webp" loading="lazy" />
+			<p>
+				その後下の画像のようにファイルを STEP
+				ファイルにし、エクスポートを選択します。
+			</p>
+			<img src="blogs/CNC/2.webp" loading="lazy" />
+			<p>これでデータの用意は完了です。</p>
+			<h2>発注方法</h2>
+			<p>次に発注方法について解説していきます。</p>
+			<p>JLCPCBのホームページから「発注する」をクリックします。</p>
+			<img src="blogs/CNC/3.webp" loading="lazy" />
+			<p>移動したページ内の「3D Printing/CNC」をクリックします。</p>
+			<img src="blogs/CNC/4.webp" loading="lazy" />
+			<p>移動したページ内の「CNC 加工」をクリックします。</p>
+			<img src="blogs/CNC/5.webp" loading="lazy" />
+			<p>
+				「3Dモデルのアップロードをクリック」し、先ほど用意したデータを選択します。
+			</p>
+			<img src="blogs/CNC/6.webp" loading="lazy" />
+			<p>
+				アップロードが完了したら枚数、材料などを設定し、「発注する」を選択します。（この時、JLCPCB
+				さんのサイトにログインしていない場合ログインを求められるのでログインします。）
+			</p>
+			<p>
+				材料や仕上げの詳細は「材料を見る」または「仕上げを見る」を選択すると確認できます。
+			</p>
+			<img src="blogs/CNC/7.webp" loading="lazy" />
+			<p>
+				ページが移動し、まず送り先の住所があっているかを確認し、「次へ」をクリックします。
+			</p>
+			<img src="blogs/CNC/8.webp" loading="lazy" />
+			<p>その後配送方法を選択し、「次へ」をクリックします。</p>
+			<img src="blogs/CNC/9.webp" loading="lazy" />
+			<p>そして最後に「発注する」をクリックします。</p>
+			<img src="blogs/CNC/10.webp" loading="lazy" />
+			<p>これで発注は完了です！</p>
+			<p>この後審査をしたのちに支払いを完了すると、製造が開始されます。</p>
+			<h2>最後に</h2>
+			<a href="https://jlcpcb.com/jp/"
+				><br /><img
+					src="photo_hub/jlcpcb.webp"
+					alt="JLCPCB's logo"
+					loading="lazy"
+				/><br />
+			</a>
+			<p>最後までご覧いただきありがとうございます。</p>
+			<p>
+				今回紹介したようにJLCPCBでの部品の発注はとても簡単なのに対し、部品の様々な設定が詳細に選択でき、使いやすいのでぜひお使いください！
+			</p>
+			<p>
+				現在、JLCPCBは新規ユーザーに
+				<a href="https://jlcpcb.com/JPV">このリンク</a
+				>の先にある$60の無料クーポンを配布しているので、ぜひクリックしてゲットしてください！
+			</p>
+			<br /><br />
+		</main>
+	</body>
+</html>
