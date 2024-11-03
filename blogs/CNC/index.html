@@ -66,9 +66,15 @@
 		<script>
 			fetch("header/header.html")
 				.then((response) => response.text())
-				.then((data) =>
-					document.querySelector("body").insertAdjacentHTML("afterbegin", data)
-				);
+				.then((data) => {
+					document.querySelector("main").insertAdjacentHTML("afterend", data);
+					const hamburger = document.getElementById("hamburger");
+					const popupBgCover = document.getElementById("back");
+
+					popupBgCover.addEventListener("click", function () {
+						hamburger.checked = !hamburger.checked;
+					});
+				});
 			fetch("footer/footer.html")
 				.then((response) => response.text())
 				.then((data) =>
