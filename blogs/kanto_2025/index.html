@@ -15,7 +15,7 @@
 
 			gtag("config", "G-CDCJ7SSLKH");
 		</script> -->
-		<base href="https://robo-muscle.github.io/" />
+		<base href="http://127.0.0.1:5500/" />
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
@@ -80,6 +80,34 @@
 				.then((data) =>
 					document.querySelector("main").insertAdjacentHTML("afterend", data)
 				);
+			function print_poster() {
+				const userAgent = navigator.userAgent.toLowerCase();
+				const checked_browzer =
+					userAgent.includes("chrome") || userAgent.includes("edg");
+
+				if (checked_browzer) {
+					document.getElementById(
+						"poster"
+					).innerHTML = `<div style= "position: relative;
+												width: 100%;
+												height: 0;
+												padding-bottom: 70%;
+												overflow: hidden;">
+												<iframe src="blogs/kanto_2025/2025_kanto.pdf"
+												style ="position: absolute;
+														width: 100%;
+														height: 100%;
+														border: 0">
+												</iframe>
+									</div>`;
+				} else {
+					document.getElementById(
+						"poster"
+					).innerHTML = `<img src="blogs/kanto_2025/2025_kanto_poster.jpg"/>`;
+				}
+			}
+
+			window.onload = print_poster;
 		</script>
 	</head>
 	<body>
@@ -158,21 +186,7 @@
 				次に大会で掲示したポスターなどについて説明します。
 				下のものが実際に掲示したポスターです。
 			</p>
-			<div
-				style="
-					position: relative;
-					width: 100%;
-					height: 0;
-					padding-bottom: 70%;
-					overflow: hidden;
-				"
-			>
-				<iframe
-					src="blogs/kanto_2025/2025_kanto.pdf"
-					style="position: absolute; width: 100%; height: 100%; border: 0"
-				></iframe>
-			</div>
-
+			<div id="poster"></div>
 			<p>
 				今回ポスターはかなり時間をかけて製作しました。それによりポスター賞は惜しくも取ることができなかったのですが、出来のいいものが仕上がったと思います。
 			</p>
