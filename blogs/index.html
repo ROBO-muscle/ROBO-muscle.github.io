@@ -2,7 +2,7 @@
 <html lang="ja">
 	<head>
 		<!-- Google tag (gtag.js) -->
-		<script
+		<!-- <script
 			async
 			src="https://www.googletagmanager.com/gtag/js?id=G-CDCJ7SSLKH"
 		></script>
@@ -14,12 +14,11 @@
 			gtag("js", new Date());
 
 			gtag("config", "G-CDCJ7SSLKH");
-		</script>
+		</script> -->
 
 		<meta charset="utf-8" />
-		<base href="https://robo-muscle.github.io/" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta property="og:url" content="https://robo-muscle.github.io/" />
+		<meta property="og:url" content="https://robo-muscle.github.io/blogs" />
 		<meta property="og:website" content="website" />
 		<meta name="twitter:card" content="summary_large_image" />
 		<meta property="og:site_name" content="ROBO_muscle" />
@@ -43,10 +42,13 @@
 		<meta name="twitter:site" content="@ROBO_muscle" />
 		<meta charset="utf-8" />
 		<title>ROBO_muscle - Blogs</title>
-		<link rel="stylesheet" href="style.css" />
-		<link rel="stylesheet" href="blogs/blogs.css" />
+		<link rel="stylesheet" href="https://robo-muscle.github.io/style.css" />
+		<link
+			rel="stylesheet"
+			href="https://robo-muscle.github.io/blogs/blogs.css"
+		/>
 		<script>
-			fetch("header/header.html")
+			fetch("https://robo-muscle.github.io/header/header.html")
 				.then((response) => response.text())
 				.then((data) => {
 					document.querySelector("main").insertAdjacentHTML("afterend", data);
@@ -57,7 +59,7 @@
 						hamburger.checked = !hamburger.checked;
 					});
 				});
-			fetch("footer/footer.html")
+			fetch("https://robo-muscle.github.io/footer/footer.html")
 				.then((response) => response.text())
 				.then((data) =>
 					document.querySelector("main").insertAdjacentHTML("afterend", data)
@@ -69,65 +71,101 @@
 			<div class="title">Blogs</div>
 			<a href="blogs/kanto_2025">
 				<div class="article">
-					<img src="blogs/kanto_2025/samune.webp" alt="thumbnail" />
+					<img
+						src="https://robo-muscle.github.io/blogs/kanto_2025/samune.webp"
+						alt="thumbnail"
+					/>
 					<div class="title">2025関東ブロック結果報告</div>
 					<div class="author">
-						<img src="icons/maeboo.webp" alt="members_icon" />
+						<img
+							src="https://robo-muscle.github.io/icons/maeboo.webp"
+							alt="members_icon"
+						/>
 						<div class="name">ただのガノタ高専生</div>
 						<div class="date">2025/2/12</div>
 					</div>
 				</div>
 			</a>
-			<a href="blogs/3DP">
+			<a href="https://robo-muscle.github.io/blogs/3DP">
 				<div class="article">
-					<img src="blogs/3DP/samune.webp" alt="thumbnail" />
+					<img
+						src="https://robo-muscle.github.io/blogs/3DP/samune.webp"
+						alt="thumbnail"
+					/>
 					<div class="title">JLC3DPで3DP部品を発注をしてみよう！</div>
 					<div class="author">
-						<img src="icons/maeboo.webp" alt="members_icon" />
+						<img
+							src="https://robo-muscle.github.io/icons/maeboo.webp"
+							alt="members_icon"
+						/>
 						<div class="name">ただのガノタ高専生</div>
 						<div class="date">2024/12/16</div>
 					</div>
 				</div>
 			</a>
-			<a href="blogs/circuit/">
+			<a href="https://robo-muscle.github.io/blogs/circuit/">
 				<div class="article">
-					<img src="blogs/circuit/samune.webp" alt="thumbnail" />
+					<img
+						src="https://robo-muscle.github.io/blogs/circuit/samune.webp"
+						alt="thumbnail"
+					/>
 					<div class="title">RCJ2025シーズン機体回路紹介</div>
 					<div class="author">
-						<img src="icons/shota.webp" alt="members_icon" />
+						<img
+							src="https://robo-muscle.github.io/icons/shota.webp"
+							alt="members_icon"
+						/>
 						<div class="name">shota</div>
 						<div class="date">2024/11/28</div>
 					</div>
 				</div>
 			</a>
-			<a href="blogs/sangisai2024/">
+			<a href="https://robo-muscle.github.io/blogs/sangisai2024/">
 				<div class="article">
-					<img src="blogs/sangisai2024/samune.webp" alt="thumbnail" />
+					<img
+						src="https://robo-muscle.github.io/blogs/sangisai2024/samune.webp"
+						alt="thumbnail"
+					/>
 					<div class="title">産技祭での活動について</div>
 					<div class="author">
-						<img src="icons/taku_256.webp" alt="members_icon" />
+						<img
+							src="https://robo-muscle.github.io/icons/taku_256.webp"
+							alt="members_icon"
+						/>
 						<div class="name">taku_256</div>
 						<div class="date">2024/11/06</div>
 					</div>
 				</div>
 			</a>
-			<a href="blogs/CNC/">
+			<a href="https://robo-muscle.github.io/blogs/CNC/">
 				<div class="article">
-					<img src="blogs/CNC/samune.webp" alt="thumbnail" />
+					<img
+						src="https://robo-muscle.github.io/blogs/CNC/samune.webp"
+						alt="thumbnail"
+					/>
 					<div class="title">JLCPCBでCNC部品を発注をしてみよう！</div>
 					<div class="author">
-						<img src="icons/maeboo.webp" alt="members_icon" />
+						<img
+							src="https://robo-muscle.github.io/icons/maeboo.webp"
+							alt="members_icon"
+						/>
 						<div class="name">ただのガノタ高専生</div>
 						<div class="date">2024/08/14</div>
 					</div>
 				</div>
 			</a>
-			<a href="blogs/intro/">
+			<a href="https://robo-muscle.github.io/blogs/intro/">
 				<div class="article">
-					<img src="blogs/intro/samune.webp" alt="thumbnail" />
+					<img
+						src="https://robo-muscle.github.io/blogs/intro/samune.webp"
+						alt="thumbnail"
+					/>
 					<div class="title">ブログ開設しました！！</div>
 					<div class="author">
-						<img src="icons/taku_256.webp" alt="members_icon" />
+						<img
+							src="https://robo-muscle.github.io/icons/taku_256.webp"
+							alt="members_icon"
+						/>
 						<div class="name">taku_256</div>
 						<div class="date">2024/08/10</div>
 					</div>
