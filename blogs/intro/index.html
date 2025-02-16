@@ -15,7 +15,6 @@
 
 			gtag("config", "G-CDCJ7SSLKH");
 		</script>
-		<base href="https://robo-muscle.github.io" />
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
@@ -62,9 +61,9 @@
 		content=“https://robo-muscle.github.io/blogs/intro/samune.jpg“ />
 		<meta property="og:locale" content="ja_JP" />
 		<meta name="twitter:site" content="@ROBO_muscle" />
-		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="https://robo-muscle.github.io/style.css" />
 		<script>
-			fetch("header/header.html")
+			fetch("https://robo-muscle.github.io/header/header.html")
 				.then((response) => response.text())
 				.then((data) => {
 					document.querySelector("main").insertAdjacentHTML("afterend", data);
@@ -75,7 +74,7 @@
 						hamburger.checked = !hamburger.checked;
 					});
 				});
-			fetch("footer/footer.html")
+			fetch("https://robo-muscle.github.io/footer/footer.html")
 				.then((response) => response.text())
 				.then((data) =>
 					document.querySelector("main").insertAdjacentHTML("afterend", data)
@@ -91,12 +90,18 @@
 				<div class="author">
 					<!--ただしがのたはauthorgn-->
 					<a href="https://twitter.com/taku_8bits">
-						<img src="icons/taku_256.webp" alt="members_icon" />
+						<img
+							src="https://robo-muscle.github.io/icons/taku_256.webp"
+							alt="members_icon"
+						/>
 						<div class="name">Author taku_256</div>
 					</a>
 					<div class="date">2024/08/10</div>
 				</div>
-				<img src="blogs/intro/samune.webp" alt="thumbnail" />
+				<img
+					src="https://robo-muscle.github.io/blogs/intro/samune.webp"
+					alt="thumbnail"
+				/>
 			</div>
 			<div>はじめまして！！</div>
 			<br />
@@ -112,7 +117,7 @@
 			<h1>スポンサー様の紹介</h1>
 			<a href="https://jlcpcb.com/jp/"
 				><br /><img
-					src="photo_hub/jlcpcb.webp"
+					src="https://robo-muscle.github.io/photo_hub/jlcpcb.webp"
 					alt="JLCPCB's logo"
 					loading="lazy" /><br
 			/></a>
@@ -124,11 +129,9 @@
 				また、今なら無料で新規ユーザーには$60クーポンを受け取れるらしいです。
 			</p>
 			<p>ぜひ利用してみてください！！</p>
-			<a href="https://jlcpcb.com/jp/">
-				JLCPCBの発注はこのリンク(https://jlcpcb.com/jp/,
-				<a href="https://jlcpcb.com/JPV/"> https://jlcpcb.com/JPV/ </a>
-				)から！！</a
-			>
+			JLCPCBの発注はこのリンク(<a href="https://jlcpcb.com/jp/">英語</a> ,
+			<a href="https://jlcpcb.com/JPV/">日本語</a>
+			)から！！
 			<br /><br />
 		</main>
 	</body>
