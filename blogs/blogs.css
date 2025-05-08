@@ -15,7 +15,7 @@
 }
 
 .article {
-	display: inline-block;
+	display: none;
 	border: 1px solid;
 	color: black;
 	box-sizing: border-box;
