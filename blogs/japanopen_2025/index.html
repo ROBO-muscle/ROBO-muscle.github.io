@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<!-- Google tag (gtag.js) -->
+		<!-- <script
+			async
+			src="https://www.googletagmanager.com/gtag/js?id=G-CDCJ7SSLKH"
+		></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag("js", new Date());
+
+			gtag("config", "G-CDCJ7SSLKH");
+		</script> -->
+
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<title>RoboCupJunior Japan Open 2025結果報告 - ROBO_muscle</title>
+		<meta
+			property="og:url"
+			content="https://robo-muscle.github.io/blogs/japanopen_2025/"
+		/>
+		<link
+			rel="canonical"
+			href="https://robo-muscle.github.io/blogs/japanopen_2025/"
+		/>
+		<meta property="og:website" content="article" />
+		<meta
+			property="article:published_time"
+			content="2025-02-12T19:30:00+09:00"
+		/>
+		<meta
+			property="article:modified_time"
+			content="2025-02-12T19:30:00+09:00"
+		/>
+		<meta property="article:tag" content="RCJJ" />
+		<meta property="article:tag" content="Robocup" />
+		<meta property="article:tag" content="technology" />
+		<meta property="article:tag" content="robot" />
+		<meta property="article:section" content="RCJJ" />
+		<meta property="article:section" content="Robocup" />
+		<meta property="article:section" content="technology" />
+		<meta property="article:section" content="robot" />
+		<meta property="article:section" content="ロボマッスル🦾" />
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta property="og:site_name" content="ROBO_muscle" />
+		<meta property="og:title" content="RoboCupJunior Japan Open 2025結果報告" />
+		<meta
+			name="twitter:title"
+			content="RoboCupJunior Japan Open 2025結果報告"
+		/>
+		<meta
+			property="og:description"
+			content="2025年3月下旬に行われたロボカップジュニアジャパンオープンの成果報告です"
+		/>
+		<meta
+			name="description"
+			content="2025年3月下旬に行われたロボカップジュニアジャパンオープンの成果報告です"
+		/>
+		<meta
+			property="og:image"
+			content="https://robo-muscle.github.io/blogs/kanto_2025/samune.webp"
+		/>
+		<meta
+			name="twitter:image"
+			content="https://robo-muscle.github.io/blogs/kanto_2025/samune.jpg"
+		/>
+
+		<meta property="og:locale" content="ja_JP" />
+		<meta name="twitter:site" content="@ROBO_muscle" />
+		<link rel="stylesheet" href="https://robo-muscle.github.io/style.css" />
+		<style>
+			table {
+				border-collapse: collapse; /* 枠線を重ねてスッキリ */
+				width: 100%;
+				max-width: 640px;
+				margin: 20px auto;
+			}
+			th,
+			td {
+				border: 1px solid #999;
+				padding: 8px 12px;
+				text-align: center;
+			}
+		</style>
+		<script>
+			fetch("https://robo-muscle.github.io/header/header.html")
+				.then((response) => response.text())
+				.then((data) => {
+					document.querySelector("main").insertAdjacentHTML("afterend", data);
+					const hamburger = document.getElementById("hamburger");
+					const popupBgCover = document.getElementById("back");
+
+					popupBgCover.addEventListener("click", function () {
+						hamburger.checked = !hamburger.checked;
+					});
+				});
+			fetch("https://robo-muscle.github.io/footer/footer.html")
+				.then((response) => response.text())
+				.then((data) =>
+					document.querySelector("main").insertAdjacentHTML("afterend", data)
+				);
+
+			window.onload = function () {
+				if (
+					navigator.userAgent.toLowerCase().includes("chrome") ||
+					navigator.userAgent.toLowerCase().includes("firefox") ||
+					navigator.userAgent.toLowerCase().includes("edg")
+				) {
+					document.getElementById(
+						"poster"
+					).innerHTML = `<div style= "position: relative;
+												width: 100%;
+												height: 0;
+												padding-bottom: 70%;
+												overflow: hidden;">
+												<iframe src="http://127.0.0.1:5500/blogs/japanopen_2025/japanopen_2025.pdf"
+												style ="position: absolute;
+														width: 100%;
+														height: 100%;
+														border: 0">
+												</iframe>
+									</div>`;
+				} else {
+					document.getElementById(
+						"poster"
+					).innerHTML = `<img src="http://127.0.0.1:5500/blogs/japanopen_2025/japanopen_2025.jpg"/>`;
+				}
+			};
+		</script>
+	</head>
+	<body>
+		<main>
+			<div class="blog_head">
+				<div class="title">RoboCupJunior Japan Open 2025結果報告</div>
+				<div class="titlebar"></div>
+				<div class="author">
+					<a href="https://twitter.com/taku_8bits">
+						<img
+							src="https://robo-muscle.github.io/icons/taku_256.webp"
+							alt="members_icon"
+						/>
+						<div class="name">Author taku_256</div>
+					</a>
+					<div class="date">2025/06/01</div>
+				</div>
+				<img
+					src="http://127.0.0.1:5500//blogs/japanopen_2025/samune.jpg"
+					alt="thumbnail"
+				/>
+			</div>
+			<div>
+				皆様いかがお過ごしでしょうか。ロボマッスル🦾リーダーのtakuです。
+			</div>
+			<div>
+				非情にも時の流れは早く、ジャパンオープンからすでに三ヶ月も経過してしまいました。
+			</div>
+			<div>
+				そのため、このような記事を出すタイミングを逃してしまっていましたが、大会側からポスターに関するフィードバックをいただきましたので、その共有を含めて記事を書かせていただきました。
+			</div>
+			<div>ぜひ最後まで読んでいってください🦾🦾</div>
+			<br />
+			<h2>結果</h2>
+			<table>
+				<thead>
+					<tr>
+						<th></th>
+						<th>対戦相手</th>
+						<th>スコア</th>
+						<th>結果</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Round 1</td>
+						<td>RYOF</td>
+						<td>1-10</td>
+						<td>Lose</td>
+					</tr>
+					<tr>
+						<td>Round 2</td>
+						<td>DodD</td>
+						<td>11-0</td>
+						<td>Win</td>
+					</tr>
+					<tr>
+						<td>Round 3</td>
+						<td>ToinADMIX</td>
+						<td>1-5</td>
+						<td>Lose</td>
+					</tr>
+					<tr>
+						<td>Round 4</td>
+						<td>HERMANO</td>
+						<td>5-1</td>
+						<td>Win</td>
+					</tr>
+					<tr>
+						<td>Round 5</td>
+						<td>TITAN</td>
+						<td>3-3</td>
+						<td>Draw</td>
+					</tr>
+					<tr>
+						<td>Round 6</td>
+						<td>TDK</td>
+						<td>5-1</td>
+						<td>Win</td>
+					</tr>
+					<tr>
+						<td>Round 7</td>
+						<td>T29F1</td>
+						<td>4-3</td>
+						<td>Win</td>
+					</tr>
+					<tr>
+						<td>Round 8</td>
+						<td>NK2</td>
+						<td>3-0</td>
+						<td>Win</td>
+					</tr>
+				</tbody>
+			</table>
+			<div>
+				結果は<strong>5勝2敗1分</strong>、<strong>総合順位6位</strong>でした。
+			</div>
+			<div>
+				敗因としては、今シーズン設計した機体を新たにもう一台増やし、さらにブロック大会から仕様をいくつか変更したため、調整が先延ばしになってしまったことが挙げられます。
+			</div>
+			<div>
+				大会前日は、大会前々日に回路班が実装したラインセンサー用の基板とその周辺の調整に追われており、1日目はディフェンス機の調整がまだ完璧でない状態での出場を余儀なくされました。
+			</div>
+			<div>
+				また、今回の機体にはさまざまな機能を搭載していましたが、すべての機能を動かした際の動作確認が十分にできておらず、カメラは稼働させず、重量オーバーのためキッカーを外して臨みました。
+			</div>
+			<div>
+				さらに、ロボットの運用ミスも多く見られ、特に機体の起動方法のミスが頻発したことで、安定した実力を発揮できませんでした。
+			</div>
+			<div>
+				しかし、2日目はロボットの運用を見直し、ヒューマンエラーを減らすよう心掛けた結果、一度も敗れることなく本戦を終えることができました。
+			</div>
+			<div>
+				来シーズンは開発スケジュールを見直し、今回大会で使用しなかった機能も万全の状態で挑めるよう準備を進めていきたいと思います。
+			</div>
+			<br />
+			<h2>プレゼンテーションポスター</h2>
+			<div id="poster"></div>
+			<div>ポスター審査点は100点満点中<strong>94.92点</strong>でした。</div>
+			<div>審査員のコメントをいただいたので以下に共有させていただきます。</div>
+			<h3 style="font-weight: normal">コメント1</h3>
+			<div>
+				システムブロック図が具体的に書かれていた点，シミュレーションや実験データに基づく検討過程が書かれていた点は素晴らしいです。もっとロボットのことチームのことを知りたいです。ポスターはそのチームの活動を具体的に知りたいと思う人たちが見ます。あなたのチームだと分かる具体的な内容を書くようにしてください。書き方の基本は，チームで目指した目標や解決しようとした課題を挙げて，それをどの様な方法で達成，解決しようとしたか，結果として大会本番時点までにどこまで達成，解決できたかをまず具体的に書くようにしましょう。
+			</div>
+			<br />
+			<h3 style="font-weight: normal">コメント2</h3>
+			<div>
+				充実した情報量が見やすくかつわかりやすくまとめられており、素晴らしいポスターだと思います。技術面においても、他のチームにあまりみられないハイレベルな開発プロセスが盛り込まれており、非常に興味深い内容でした。
+			</div>
+			<br />
+			<h3 style="font-weight: normal">コメント3</h3>
+			<div>
+				製作にかかわる情報が丁寧に記載されており、とても参考になる。また一般的な技術の一歩上に行くための工夫が多いと感じる。ほかの選手たちによく見てほしいとても参考になるポスターでした。
+			</div>
+			<br />
+			<h2>スポンサー様の紹介</h2>
+			<a href="https://jlcpcb.com/jp/"
+				><br /><img
+					src="https://robo-muscle.github.io/photo_hub/jlcpcb.webp"
+					alt="JLCPCB's logo" /><br
+			/></a>
+			<div>
+				今回のシーズンでここまでチームとして成長できたのは、スポンサーであるJLCPCB様からの支援が大きかったと思います。
+			</div>
+			<div>
+				JLCPCB様の迅速な対応がなければ、ブロック大会からこの大会までの間に一機体を新に新造し、二機体とも同じ使用に変更するということはできなかったかと思います。
+			</div>
+			<div>本当にありがとうございました。</div>
+			<div>
+				JLCPCB様のサービスは、ロボットコンテストに参加される方だけでなく、DIYや電子工作を楽しむ方々にとっても非常に使いやすく便利です。これからものづくりを始めたい初心者の方にもおすすめですので、ぜひご利用ください。
+			</div>
+			<p>
+				JLCPCBのサイトは次のリンクからアクセスできます。
+				<a href="https://jlcpcb.com/jp/">英語</a>
+				<a href="https://jlcpcb.com/JPV/">日本語</a>
+			</p>
+			<br />
+			<h2>これからの活動について</h2>
+			<div>
+				来シーズンは、受験や年齢的な理由により回路班のshotaがチームを離れます。これまで本当にお疲れ様でした。
+			</div>
+			<div>
+				直近の予定としては、毎年8月末に開催されるNESTロボコンに参加する予定です。
+			</div>
+			<div>
+				今シーズンは悔しい結果となりましたが、それをバネに来シーズンはさらに精進してまいります。今後のロボマッスル🦾の活動にぜひご期待ください。
+			</div>
+			<div>ここまでお読みいただき、ありがとうございました。</div>
+			<div>次回の投稿もぜひ読んでいただけると嬉しいです！</div>
+		</main>
+	</body>
+</html>
