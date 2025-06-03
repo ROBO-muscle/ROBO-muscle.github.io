@@ -15,32 +15,52 @@
 
 			gtag("config", "G-CDCJ7SSLKH");
 		</script>
+		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta property="og:url" content="https://robo-muscle.github.io/" />
-		<meta property="og:website" content="website" />
-		<meta name="twitter:card" content="summary_large_image" />
-		<meta property="og:site_name" content="ROBO_muscle" />
-		<meta property="og:title" content="Home" />
-		<meta name="twitter:title" content="Home" />
-		<meta
-			property="og:description"
-			content="ロボカップジュニアサッカーライトウェイトに出場しているチーム「ロボマッスル」のホームページです。"
-		/>
+		<meta name="robots" content="index, follow" />
 		<meta
 			name="description"
+			content="ロボカップジュニアサッカーライトウェイトに出場しているチーム「ロボマッスル」のホームページです。"
+		/>
+		<meta property="og:url" content="https://robo-muscle.github.io/" />
+		<meta property="og:type" content="website" />
+		<meta property="og:site_name" content="ROBO_muscle" />
+		<meta property="og:title" content="ROBO_muscle - Home" />
+		<meta
+			property="og:description"
 			content="ロボカップジュニアサッカーライトウェイトに出場しているチーム「ロボマッスル」のホームページです。"
 		/>
 		<meta
 			property="og:image"
 			content="https://robo-muscle.github.io/photo_hub/TMCIT-gate.jpg"
 		/>
-		<meta name=“twitter:image” content=“photo_hub/TMCIT-gate.jpg“ />
 		<meta property="og:locale" content="ja_JP" />
+
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content="ROBO_muscle - Home" />
+		<meta
+			name="twitter:description"
+			content="ロボカップジュニアサッカーライトウェイトに出場しているチーム「ロボマッスル」のホームページです。"
+		/>
+		<meta
+			name="twitter:image"
+			content="https://robo-muscle.github.io/photo_hub/TMCIT-gate.jpg"
+		/>
 		<meta name="twitter:site" content="@ROBO_muscle" />
-		<meta charset="utf-8" />
+		<link rel="canonical" href="https://robo-muscle.github.io/" />
 		<title>ROBO_muscle - Home</title>
 		<link rel="stylesheet" href="https://robo-muscle.github.io/style.css" />
 		<link rel="stylesheet" href="https://robo-muscle.github.io/about.css" />
+		<script type="application/ld+json">
+			{
+				"@context": "https://schema.org",
+				"@type": "WebSite",
+				"name": "ROBO_muscle",
+				"url": "https://robo-muscle.github.io/",
+				"description": "ロボカップジュニアサッカーライトウェイトに出場しているチーム「ロボマッスル」のホームページです。",
+				"inLanguage": "ja"
+			}
+		</script>
 		<script>
 			fetch("https://robo-muscle.github.io/header/header.html")
 				.then((response) => response.text())
@@ -48,7 +68,6 @@
 					document.querySelector("main").insertAdjacentHTML("afterend", data);
 					const hamburger = document.getElementById("hamburger");
 					const popupBgCover = document.getElementById("back");
-
 					popupBgCover.addEventListener("click", function () {
 						hamburger.checked = !hamburger.checked;
 					});
@@ -106,6 +125,21 @@
 						</p>
 					</div>
 				</div>
+				<div class="member" id="glasses">
+					<div class="line"></div>
+					<img
+						src="https://robo-muscle.github.io/icons/glasses.webp"
+						alt="members_icon"
+						loading="lazy"
+					/>
+					<div class="name">メガネ</div>
+					<div class="about">
+						<div class="kosenNs">kosen23s</div>
+						<a href="https://twitter.com/Glasses_0327">@Glasses_0327</a>
+						<p>回路をお勉強している本体メガネの生命体</p>
+						<p>ロボコンしつつロボカップでも回路スキルを身につけている</p>
+					</div>
+				</div>
 				<div class="member" id="shota">
 					<div class="line"></div>
 					<img
@@ -121,21 +155,6 @@
 						<p>
 							ロボカップ以外にも高専ロボコンやロボマスをしてるため、常にタスクに追われているらしい
 						</p>
-					</div>
-				</div>
-				<div class="member" id="glasses">
-					<div class="line"></div>
-					<img
-						src="https://robo-muscle.github.io/icons/glasses.webp"
-						alt="members_icon"
-						loading="lazy"
-					/>
-					<div class="name">メガネ</div>
-					<div class="about">
-						<div class="kosenNs">kosen23s</div>
-						<a href="https://twitter.com/Glasses_0327">@Glasses_0327</a>
-						<p>回路をお勉強している本体メガネの生命体</p>
-						<p>ロボコンしつつロボカップでも回路スキルを身につけている</p>
 					</div>
 				</div>
 			</div>
