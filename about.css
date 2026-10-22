@@ -30,7 +30,7 @@
 }
 
 .member .about {
-	position: flex;
+	display: flex;
 	margin-left: 100px;
 }
 
